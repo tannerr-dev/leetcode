@@ -1,3 +1,8 @@
+// 2635. Apply Transform Over Each Element in Array
+// Solved
+// Easy
+// Companies
+// Hint
 // Given an integer array arr and a mapping function fn, return a new array with a transformation applied to each element.
 
 // The returned array should be created such that returnedArray[i] = fn(arr[i], i).
@@ -23,6 +28,13 @@
 // Input: arr = [10,20,30], fn = function constant() { return 42; }
 // Output: [42,42,42]
 // Explanation: The function always returns 42.
+ 
+
+// Constraints:
+
+// 0 <= arr.length <= 1000
+// -109 <= arr[i] <= 109
+// fn returns a number
 
 /**
  * @param {number[]} arr
@@ -30,11 +42,11 @@
  * @return {number[]}
  */
 var map = function(arr, fn) {
-    let arrMap= [];
-    for (let i =0; i< arr.length; i++){
-        arrMap.push(fn(arr[i], i))
+    let newArr = [];
+    for (let i = 0; i<arr.length; i++){
+        newArr.push(fn(arr[i], i));
     }
-    return arrMap;
+    return newArr;
 };
 
-// needed hints
+// solved with no help this time 
