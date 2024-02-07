@@ -11,7 +11,6 @@
 
 // Please solve it without using the built-in Array.reduce method.
 
- 
 
 // Example 1:
 
