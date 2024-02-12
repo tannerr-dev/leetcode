@@ -36,7 +36,14 @@ var argumentsLength = function(...args) {
    return arr.length;
 };
 
+var argumentsLength = function(...args) {
+    return args.length;
+ };
+
 /**
 * argumentsLength(1, 2, 3); // 3
 */
 // less than 2 min no hints lol
+
+//i gues in don't need to create an arr
+// the spread(...) creates the arr for me...
