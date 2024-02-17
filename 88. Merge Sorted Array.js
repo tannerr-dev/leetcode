@@ -4,15 +4,14 @@ let arr2 = [1,2,2];
 let b = 3;
 
 var merge = function(nums1, m, nums2, n) {
-    nums1.splice(m, n)
-    let count = n-1;
+    nums1.splice(m, n);
     let j = 0;
-    while (count >=0){
+    while (n >0){
         if (nums2[0] > nums1[j]){
             j++
         } else{
             nums1.splice(j, 0, nums2.shift())
-            count--;
+            n--;
             j=0
         }
     }
