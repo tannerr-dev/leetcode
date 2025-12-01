@@ -18,9 +18,10 @@ class Solution:
             else:
                 pos += 1
                 strLen = int(strLen)
-                word = ""
-                for i in range(0, strLen):
-                    word += s[pos+i]
+                word = s[pos : pos + strLen]
+                # word = ""
+                # for i in range(0, strLen):
+                #     word += s[pos+i]
                 pos = pos + strLen
                 newList.append(word)
                 strLen = ""
@@ -35,3 +36,4 @@ print("")
 res1 = Solution().decode(res)
 print(res1)
 print("")
+
